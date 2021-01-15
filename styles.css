@@ -1,0 +1,68 @@
+
+body{
+    background: white;
+}
+.calendar {
+	top: 3em;
+	left: 6.4em;
+	padding-top: 20px;
+	width: 130px;
+	background: #ededef;
+    font-size: 54px;
+	text-align: center;
+	color: #000;
+	border-radius: 3px;
+    position: absolute;
+}
+
+.calendar em {
+	display: block;
+	font-size: 15px;
+	color: #fff;
+	background: #04599a;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.calendar:before,
+.calendar:after {
+    position: absolute;
+	content: "";
+	float: left;
+	width: 12px;
+	height: 12px;
+	background: #111;
+	border-radius: 10px;
+	box-shadow: 0 1px 1px #fff;
+}
+.calendar:before {
+    left: 20px;
+    bottom: 90px;
+}
+.calendar:after {
+    right: 20px;
+    bottom: 90px;
+}
+
+.calendar em:before,
+.calendar em:after {
+	content: "";
+	float: left;
+	margin: 10px;
+	width: 8px;
+	height: 27px;
+	background: #838385;
+    z-index: 3;
+    border-radius: 10px;
+
+}
+.calendar em:before {
+    position: relative;
+    bottom: 100px;
+    left: 13px;
+}
+.calendar em:after {
+    position: relative;
+    right: -63px;
+    bottom: 100px;
+}
